@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewAPIController", "NewAPIController\NewAPIController.csproj", "{368D0F67-247A-4D9D-9075-05EA939FEFCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{368D0F67-247A-4D9D-9075-05EA939FEFCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{368D0F67-247A-4D9D-9075-05EA939FEFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{368D0F67-247A-4D9D-9075-05EA939FEFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{368D0F67-247A-4D9D-9075-05EA939FEFCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB13C777-8CF9-42E0-8749-A10EE10E185C}
+	EndGlobalSection
+EndGlobal

@@ -38,7 +38,7 @@ namespace NewAPIController.Controllers
         public Reservation Put([FromBody] Reservation res) =>
             repository.UpdateReservation(res);
         
-        //API to 
+        //API to modify the existing object of the particular reservation
         [HttpPatch("{id}")]
         public StatusCodeResult Patch(int id, [FromBody]JsonPatchDocument<Reservation> patch)
         {

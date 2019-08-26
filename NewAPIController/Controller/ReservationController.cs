@@ -17,23 +17,28 @@ namespace NewAPIController.Controllers
 
         public ReservationController(IRepository repo) => repository = repo;
 
+        //API To get the entire list of the available reservations
         [HttpGet]
         public IEnumerable<Reservation> Get() => repository.Reservations;
-
+        
+        //API To get the details of a particular reservation
         [HttpGet("{id}")]
         public Reservation Get(int id) => repository[id];
-
+        
+        //API To post details of a new reservation created
         [HttpPost]
         public Reservation Post([FromBody] Reservation res) =>
             repository.AddReservation(new Reservation {
                 ClientName = res.ClientName,
                 Location = res.Location
             });
-
+        
+        //API to update the details of a particuar API
         [HttpPut]
         public Reservation Put([FromBody] Reservation res) =>
             repository.UpdateReservation(res);
-
+        
+        //API to 
         [HttpPatch("{id}")]
         public StatusCodeResult Patch(int id, [FromBody]JsonPatchDocument<Reservation> patch)
         {
@@ -45,7 +50,9 @@ namespace NewAPIController.Controllers
             }
             return NotFound();
         }
+        
 
+        //API to delete a reservation
         [HttpDelete("{id}")]
         public void Delete(int id) => repository.DeleteReservation(id);
         
